@@ -106,7 +106,7 @@ body {
 }
 
 .sub {
-    color: #ccc;
+    color: #ffffff;
     font-size: 1.2rem;
     margin-top: 5px;
 }
@@ -166,7 +166,7 @@ body {
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(to right, #ff3103, #ff6666);
+    background: linear-gradient(to right, #ffffff, #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -180,7 +180,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(to right, #ff3103, #ff6666);
+    background: linear-gradient(to right, #e13535, #ff6666);
     border-radius: 3px;
 }
 
@@ -282,7 +282,7 @@ body {
 }
 
 .timeline-content p {
-    color: #ccc;
+    color: #ffffff;
     line-height: 1.6;
     font-size: 0.95rem;
 }
@@ -328,7 +328,7 @@ body {
 .stat-number {
     font-size: 2.5rem;
     font-weight: bold;
-    background: linear-gradient(to right, #ff3103, #ff6666);
+    background: linear-gradient(to right, #ffffff, #ff7f7f);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -336,7 +336,7 @@ body {
 }
 
 .stat-label {
-    color: #ccc;
+    color: #ffffff;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
