@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mc Mari</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Vídeo de fundo -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="background-video" poster="img/back.png">
+            <source src="mc-mari-flauta.mp4" type="video/mp4">
+            <!-- Fallback para navegadores que não suportam vídeo -->
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Partículas animadas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="container">
+        <!-- Foto de perfil com animação 3D -->
+        <div class="profile">
+            <div class="profile-image-container">
+                <img src="img/perfil.png" alt="Mc Mari" class="avatar" id="profile-image" />
+            </div>
+            <h1 class="artist-name">Mc Mari</h1>
+            <p class="sub">A Braba da Ousadia</p>
+        </div>
+
+        <!-- Botões sociais -->
+        <div class="social-buttons">
+            <a href="https://www.tiktok.com/@maribraba?_t=ZM-8wgznxJe92M&_r=1" target="_blank" class="btn tiktok">
+                <i class="fab fa-tiktok"></i>
+                TikTok
+            </a>
+            <a href="https://www.instagram.com/marioficial_?igsh=MWdvcHhnOGNlcmthYQ%3D%3D&utm_source=qr" target="_blank"
+                class="btn instagram">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+        </div>
+
+        <!-- Biografia/História -->
+        <h2 class="section-title">Minha História</h2>
+        <div class="biography-section">
+            <div class="bio-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>O Início</h3>
+                        <span class="timeline-date">2020</span>
+                        <p>Tudo começou com um sonho e muita coragem. Desde pequena, a música sempre foi minha paixão, e
+                            o funk se tornou minha forma de expressão.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Primeiros Passos</h3>
+                        <span class="timeline-date">2021</span>
+                        <p>Comecei a gravar minhas primeiras músicas em casa, postando nas redes sociais. A resposta do
+                            público foi incrível e me deu força para continuar.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Viral</h3>
+                        <span class="timeline-date">2022</span>
+                        <p>Minha música "Flauta - Ela Subiu, Desceu" viralizou no TikTok e mudou minha vida
+                            completamente. Milhões de visualizações e o reconhecimento que sempre sonhei.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>A Braba da Ousadia</h3>
+                        <span class="timeline-date">2023</span>
+                        <p>Me tornei conhecida como "A Braba da Ousadia" por sempre ousar e inovar no funk. Minha
+                            autenticidade conquistou fãs em todo o Brasil.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sucesso Nacional</h3>
+                        <span class="timeline-date">2024</span>
+                        <p>Shows por todo o país, colaborações com grandes nomes do funk e milhões de streams nas
+                            plataformas digitais. O sonho se tornou realidade!</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Presente</h3>
+                        <span class="timeline-date">2025</span>
+                        <p>Hoje sou grata por cada fã, cada stream, cada show. Continuo trabalhando para levar minha
+                            música e energia para cada vez mais pessoas!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-stats">
+                <div class="stat-card">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Visualizações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500K+</div>
+                    <div class="stat-label">Seguidores</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Shows Realizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5M+</div>
+                    <div class="stat-label">Streams</div>
+                </div>
+            </div>
+
+            <div class="bio-quote">
+                <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Minha missão é levar alegria e empoderamento através da música. Cada batida, cada rima, é um
+                        pedaço do meu coração que compartilho com vocês."</p>
+                    <cite>- MC Mari</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Agenda de Shows -->
+        <h2 class="section-title">Agenda de Shows</h2>
+        <div class="shows-container">
+            <div class="show-card">
+                <div class="show-date">
+                    <span class="month">FEV</span>
+                    <span class="day">15</span>
+                    <span class="weekday">SAB</span>
+                </div>
+                <div class="show-info">
+                    <h3>MC Mari - Show da Ousadia</h3>
+                    <div class="show-details">
+                        <span><i class="fas fa-clock"></i> 22:00</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Casa de Shows XYZ</span>
+                        <span>São Paulo, SP</span>
+                    </div>
+                    <div class="show-price">
+                        <span class="price">R$ 50,00</span>
+                        <span class="status available">Ingressos Disponíveis</span>
+                        <button class="buy-ticket">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-card">
+                <div class="show-date">
+                    <span class="month">MAR</span>
+                    <span class="day">08</span>
+                    <span class="weekday">DOM</span>
+                </div>
+                <div class="show-info">
+                    <h3>Festival de Funk</h3>
+                    <div class="show-details">
+                        <span><i class="fas fa-clock"></i> 20:00</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Arena Funk</span>
+                        <span>Rio de Janeiro, RJ</span>
+                    </div>
+                    <div class="show-price">
+                        <span class="price">R$ 80,00</span>
+                        <span class="status available">Ingressos Disponíveis</span>
+                        <button class="buy-ticket">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-card">
+                <div class="show-date">
+                    <span class="month">MAR</span>
+                    <span class="day">22</span>
+                    <span class="weekday">DOM</span>
+                </div>
+                <div class="show-info">
+                    <h3>MC Mari Live</h3>
+                    <div class="show-details">
+                        <span><i class="fas fa-clock"></i> 21:30</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Club Premium</span>
+                        <span>Belo Horizonte, MG</span>
+                    </div>
+                    <div class="show-price">
+                        <span class="price">R$ 60,00</span>
+                        <span class="status sold-out">Esgotado</span>
+                        <button class="buy-ticket" disabled>Esgotado</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Título YouTube -->
+        <h2 class="section-title">YouTube</h2>
+        <div class="video-carousel">
+            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="video-container">
+                <iframe width="100%" height="215" src="https://www.youtube.com/embed/W2Q7jMVbw-s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+
+        <!-- Galeria de Fotos -->
+        <h2 class="section-title">Galeria de Fotos</h2>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-category="all">Todas</button>
+            <button class="filter-btn" data-category="shows">Shows</button>
+            <button class="filter-btn" data-category="backstage">Bastidores</button>
+            <button class="filter-btn" data-category="studio">Estúdio</button>
+        </div>
+        <div class="photo-gallery">
+            <div class="gallery-item" data-category="shows">
+                <img src="img/img1.jpg" alt="MC Mari Show 1" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="backstage">
+                <img src="img/img2.jpg" alt="MC Mari Backstage" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="studio">
+                <img src="img/img3.jpg" alt="MC Mari Studio" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="shows">
+                <img src="img/img4.jpg" alt="MC Mari Show 2" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Título Contatos -->
+        <h2 class="section-title">Contatos</h2>
+        <div class="cards">
+            <a href="https://wa.me/5511940042500" target="_blank" class="card"
+                style="background-image: url('img/contato.png');">
+                <div class="card-overlay">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </a>
+            <a href="https://wa.me/5511980760507" target="_blank" class="card"
+                style="background-image: url('img/contato1.png');">
+                <div class="card-overlay">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </a>
+            <a href="https://wa.me/5511974795042" target="_blank" class="card"
+                style="background-image: url('img/ass.png');">
+                <div class="card-overlay">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </a>
+            <a href="https://wa.me/5511951696434" target="_blank" class="card"
+                style="background-image: url('img/ass1.png');">
+                <div class="card-overlay">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="section-title">Spotify</h2>
+        <div class="spotify">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/2AdUWxNm17kkGZiPGuorth?utm_source=generator" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Direitos -->
+        <footer class="footer">
+            <p>© 2025 Todos os direitos reservados a
+                <strong>
+                    <a href="https://www.instagram.com/gabriellim4ss?igsh=M2M3ZTV6N3dxaHpu" target="_blank"
+                        class="footer-link">
+                        Gabriel Lima
+                    </a>
+                </strong>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal" id="lightbox-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="/placeholder.svg" alt="" id="lightbox-image" />
+            <button class="modal-nav prev-image"><i class="fas fa-chevron-left"></i></button>
+            <button class="modal-nav next-image"><i class="fas fa-chevron-right"></i></button>
+            <div class="image-caption">
+                <h3 id="image-title"></h3>
+                <p id="image-count"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="ticket-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="ticket-title"></h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="ticket-details">
+            </div>
+            <div class="modal-actions">
+                <button class="cancel-btn">Cancelar</button>
+                <button class="confirm-btn">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
